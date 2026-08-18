@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de Banda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+<div class="container1 text-center"><img src="img/Logo. SITEMAP.png" width="200"></div>
+  <br>
+  <nav class="navbar navbar-expand-lg">
+    
+    <div class="container container1 justify-content-center">
+      <div class="navbar-nav corfont">
+ 
+                <a class="nav-link corfont" href="index.html">Inicio</a>
+        <a class="nav-link corfont" href="cardapio.html">Nossos Produtos</a>
+        <a class="nav-link corfont" href="reserva.html">Reserva</a>
+        <a class="nav-link corfont" href="especiaisdodia.html">Especiais do dia</a>
+        <a class="nav-link corfont" href="banda.html">Cadastro das Bandas</a>
+      </div>
+    </div>
+  </nav>
+
+
+</div>
+</header>
+    <div class="container">
+<hr>
+        <h1 class="titulo">
+            Cadastro de Banda
+        </h1>
+
+
+        <form id="formBanda">
+<br>
+<br>
+<hr>
+            <h2>Informações da Banda</h2>
+
+            <label for="nomeBanda">
+                Nome da banda:
+            </label>
+
+            <input type="text" id="nomeBanda" placeholder="Digite o nome da banda" required>
+
+
+            <label for="genero">
+                Gênero musical:
+            </label>
+
+            <select id="genero" required>
+
+                <option value="">
+                    Selecione
+                </option>
+
+                <option value="Rock">
+                    Rock
+                </option>
+
+                <option value="Pop">
+                    Pop
+                </option>
+
+                <option value="Metal">
+                    Metal
+                </option>
+
+                <option value="Sertanejo">
+                    Sertanejo
+                </option>
+
+                <option value="MPB">
+                    MPB
+                </option>
+
+                <option value="Rap">
+                    Rap
+                </option>
+
+                <option value="Reggae">
+                    Reggae
+                </option>
+
+            </select>
+
+
+            <label for="ano">
+                Ano de formação:
+            </label>
+
+            <input type="number" id="ano" placeholder="Ex: 2020" required>
+
+
+            <label for="cidade">
+                Cidade:
+            </label>
+
+            <input type="text" id="cidade" placeholder="Cidade da banda" required>
+
+
+            <h2>Integrantes</h2>
+
+            <label for="vocalista">
+                Vocalista:
+            </label>
+
+            <input type="text" id="vocalista" placeholder="Nome do vocalista" required>
+
+
+            <label for="guitarrista">
+                Guitarrista:
+            </label>
+
+            <input type="text" id="guitarrista" placeholder="Nome do guitarrista">
+
+
+            <label for="baixista">
+                Baixista:
+            </label>
+
+            <input type="text" id="baixista" placeholder="Nome do baixista">
+
+
+            <label for="baterista">
+                Baterista:
+            </label>
+
+            <input type="text" id="baterista" placeholder="Nome do baterista">
+
+
+            <h2>Sobre a Banda</h2>
+
+            <label for="descricao">
+                Descrição:
+            </label>
+
+            <textarea id="descricao" rows="5" placeholder="Conte sobre a banda..."></textarea>
+
+
+            <label for="musica">
+                Música mais conhecida:
+            </label>
+
+            <input type="text" id="musica" placeholder="Nome da música">
+
+            <div>
+                <input type="checkbox" onchange="verifica(this)" id="concordo">
+                <label>Concordo com os termos</label>
+            </div>
+
+
+            <button id="ababc" class="btn_cadastrar">
+                Cadastrar Banda
+            </button>
+
+        </form>
+
+
+        <div id="resultado"></div>
+
+    </div>
+
+
+    <footer class="roda">
+
+
+    </footer>
+
+
+    <script>
+            function verifica(elemento) {
+                if (elemento.checked) {
+                    document.getElementById("ababc").className = "btn_cadastrar_ok"
+                } else {
+                    document.getElementById("ababc").className = "btn_cadastrar"
+                }
+
+            }
+b
+    </script>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black  pt-3
+ pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- LOGO / SOBRE -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="fw-bold">Seu Sabor 🍔</h4>
+                    <p class="corfont">
+                        O melhor lugar para saborear hambúrgueres, pizzas e pastéis incríveis.
+                        Qualidade, sabor e rapidez em um só lugar!
+                    </p>
+                </div>
+
+                <!-- LINKS -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="cardapio.html" class="text-decoration-none ">Cardápio</a></li>
+                        <li><a href="reserva.html" class="text-decoration-none ">Reserva</a></li>
+                        <li><a href="especiaisdodia.html" class="text-decoration-none ">Especiais</a></li>
+                        <li><a href="sobrenos.html" class="text-decoration-none ">Sobre Nós</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTATO -->
+                <div class="col-md-4 mb-4 ">
+                    <h5 class="fw-bold">Contato</h5>
+                    <div class="corfont">
+                        <p class=" mb-1">📞 (14) 99829-3867</p>
+                        <p class=" mb-1">📍 Santa Cruz do Rio Pardo/SP</p>
+                        <p class="corfont">📧 contato@seusabor.com</p>
+                    </div>
+
+
+                    <!-- REDES SOCIAIS -->
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white me-3 fs-5">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- LINHA FINAL -->
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 ">
+                    © 2026 Seu Sabor - Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+</body>
+
+</html
